@@ -4,8 +4,26 @@ const app = getApp()
 
 Page({
   data: {
-    latitude: null,
-    longitude: null
+    // 海报滚动
+    bannerList: [
+      { id: 1, imgUrl: '/images/banner-1.png'},
+      { id: 2, imgUrl: '/images/banner-1.png'},
+      { id: 3, imgUrl: '/images/banner-1.png'}
+    ],
+    // 当前滚动索引
+    swiperIndex: 0,
+    // 分类图标
+    sortList: [
+      { id: 1, imgUrl: '/images/icons/dress.png', describe: '女装' },
+      { id: 2, imgUrl: '/images/icons/suit.png', describe: '男装' },
+      { id: 3, imgUrl: '/images/icons/clothes.png', describe: '套装' },
+      { id: 4, imgUrl: '/images/icons/others.png', describe: '更多' }
+    ]
+  },
+  onSwiperChange: function (e) {
+    this.setData({
+      swiperIndex: e.detail.current
+    })
   },
   //事件处理函数
   bindViewTap: function() {

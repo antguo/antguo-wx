@@ -4,3 +4,18 @@
   <image class="pages_index__images-search" src="/images/icons/mirror.png"></image>
   <input class="pages-index__input-search" type="text" placeholder="搜素商品名称或类型" placeholder-style="color:#b4b2b3;"></input>
 </view>
+<swiper autoplay previous-margin="30rpx" next-margin="30rpx" circular="true" current="{{swiperIndex}}" bindchange="onSwiperChange">
+  <swiper-item wx:for="{{bannerList}}" wx:key="id">
+    <view class="{{swiperIndex === index? 'pages-index__swiper-item--current':'pages-index__swiper-item'}}">
+      <image mode="aspectFill" class="pages-index__swiper-item-img" src="{{item.imgUrl}}"></image>
+    </view>
+  </swiper-item>
+</swiper>
+<view class="pages-index__sort">
+  <view class="pages-index__sort-item" wx:for="{{sortList}}">
+    <view class="pages-index__sort-item-image">
+      <image src="{{item.imgUrl}}"></image>
+    </view>
+    <span class="pages-index__sort-item-span">{{item.describe}}</span>
+  </view>
+</view>

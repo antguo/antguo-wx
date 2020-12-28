@@ -1,4 +1,7 @@
 /**index.wxss**/
+page{
+  background: #f3f3f3;
+}
 .pages-index__input-search {
   background-color: #e6e3e4;
   height: 66rpx;
@@ -14,4 +17,47 @@
   left: 40rpx;
   width: 32rpx;
   height: 34rpx;
+}
+.pages-index__swiper-item{
+  height: 260rpx;
+  padding: 0px 8rpx;
+  margin-top: 20rpx;
+}
+.pages-index__swiper-item-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 20rpx;
+}
+.pages-index__swiper-item--current{
+  height: 300rpx;
+  padding: 0px 8rpx;
+}
+.pages-index__sort{
+  margin: 0px 28rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  color: #9d9d9d;
+  font-size: 14px;
+  padding: 20rpx 0rpx;
+}
+.pages-index__sort-item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.pages-index__sort-item-image{
+  width: 50rpx;
+  height: 50rpx;
+  background: #f3f3fc;
+  border-radius: 60rpx;
+  padding: 20rpx;
+}
+.pages-index__sort-item-image image{
+  height: 100%;
+  width: 100%;
+}
+.pages-index__sort-item-span{
+  padding-top: 14rpx;
 }
