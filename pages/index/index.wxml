@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="app__header-bar">首页</view>
+<view class="pages-index__search">
+  <image class="pages_index__images-search" src="/images/icons/mirror.png"></image>
+  <input class="pages-index__input-search" type="text" placeholder="搜素商品名称或类型" placeholder-style="color:#b4b2b3;"></input>
+</view>

@@ -1,0 +1,24 @@
+/* pages/start/start.wxss */
+.pages-start__swiper{
+  width: 100vw;
+  height: 100vh;
+}
+.pages-start__swiper-item{
+  width: 100vw;
+  height: 100vh;
+}
+.pages-start__image{
+  width: 100vw;
+  height: 100vh;
+}
+.pages-start__btn{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50rpx;
+  display: flex;
+  justify-content: center;
+}
+.pages-start__btn button{
+  font-size: 14px !important;
+}

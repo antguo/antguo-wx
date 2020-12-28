@@ -1,0 +1,9 @@
+<!--pages/start/start.wxml-->
+<swiper class="pages-start__swiper" bindchange="onSwiperChange" indicator-dots="true" indicator-active-color="#fff">
+  <swiper-item class="pages-start__swiper-item" wx:for="{{banners}}" wx:key="id">
+    <image class="pages-start__image" mode="aspectFill" src="{{item.imgUrl}}"></image>
+  </swiper-item>
+</swiper>
+<view class="pages-start__btn">
+  <button wx:if="{{currentId + 1 == banners.length}}" type="primary" size="mini" bindtap="goHomePage">进入首页</button>
+</view>

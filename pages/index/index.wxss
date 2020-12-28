@@ -1,0 +1,17 @@
+/**index.wxss**/
+.pages-index__input-search {
+  background-color: #e6e3e4;
+  height: 66rpx;
+  border-radius: 40rpx;
+  padding-left: 80rpx;
+  margin: 20rpx;
+  font-size: 14px;
+  color: #8f8d8e;
+}
+.pages_index__images-search {
+  position: absolute;
+  top: 186rpx;
+  left: 40rpx;
+  width: 32rpx;
+  height: 34rpx;
+}
