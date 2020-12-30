@@ -6,9 +6,9 @@ Page({
   data: {
     // 海报滚动
     bannerList: [
-      { id: 1, imgUrl: '/images/banner-1.png'},
-      { id: 2, imgUrl: '/images/banner-1.png'},
-      { id: 3, imgUrl: '/images/banner-1.png'}
+      { id: 1, imgUrl: '/images/banner-a.png'},
+      { id: 2, imgUrl: '/images/banner-a.png'},
+      { id: 3, imgUrl: '/images/banner-a.png'}
     ],
     // 当前滚动索引
     swiperIndex: 0,
@@ -18,6 +18,17 @@ Page({
       { id: 2, imgUrl: '/images/icons/suit.png', describe: '男装' },
       { id: 3, imgUrl: '/images/icons/clothes.png', describe: '套装' },
       { id: 4, imgUrl: '/images/icons/others.png', describe: '更多' }
+    ],
+    // 热门产品
+    hotList: [
+      { id: 1, imgUrl: '/images/loading-img.png', title: '潮流碎花连衣裙', price: 89 },
+      { id: 2, imgUrl: '/images/loading-img.png', title: '男士休闲运动裤',price: 96 },
+      { id: 3, imgUrl: '/images/loading-img.png', title: '清凉一夏防晒衫',price: 45 }
+    ],
+    // 主打产品
+    majorList: [
+      { id: 1, imgUrl: '/images/major/major-1.png', title: '2020潮流韩版蝙蝠衫', price: 100 },
+      { id: 2, imgUrl: '/images/major/major-2.png', title: '春季新款两件套碎花裙', price: 120 }
     ]
   },
   onSwiperChange: function (e) {

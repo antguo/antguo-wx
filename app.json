@@ -4,8 +4,7 @@
     "pages/start/start",
     "pages/read/read",
     "pages/watch/watch",
-    "pages/components/button/index",
-    "pages/components/pop/index"
+    "components/navBar/index"
   ],
   "permission": {
     "scope.userLocation": {
@@ -18,24 +17,32 @@
     "navigationBarTextStyle":"white",
     "navigationStyle": "custom"
   },
+  "usingComponents": {
+    "navBar": "components/navBar/index"
+  },
   "tabBar": {
-    "color": "#666666",
-    "selectedColor": "#3889f0",
+    "color": "#517bfb",
+    "selectedColor": "#517bfb",
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath":"/images/shouye.png",
-      "selectedIconPath":"/images/shouye-3.png"
+      "text": "商城",
+      "iconPath":"/images/icons/商城-1.png",
+      "selectedIconPath":"/images/icons/商城-2.png"
     }, {
       "pagePath": "pages/read/read",
-      "text": "读",
-      "iconPath":"/images/icon.png",
-      "selectedIconPath":"/images/icon-2.png"
+      "text": "分类",
+      "iconPath":"/images/icons/分类-1.png",
+      "selectedIconPath":"/images/icons/分类-2.png"
     }, {
       "pagePath": "pages/watch/watch",
-      "text": "写",
-      "iconPath":"/images/gouwuche.png",
-      "selectedIconPath":"/images/gouwuche-2.png"
+      "text": "购物车",
+      "iconPath":"/images/icons/购物车-1.png",
+      "selectedIconPath":"/images/icons/购物车-2.png"
+    }, {
+      "pagePath": "pages/watch/watch",
+      "text": "我的",
+      "iconPath":"/images/icons/我的-1.png",
+      "selectedIconPath":"/images/icons/我的-2.png"
     }]
   },
   "style": "v2",

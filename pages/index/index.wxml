@@ -1,9 +1,18 @@
 <!--index.wxml-->
-<view class="app__header-bar">首页</view>
-<view class="pages-index__search">
-  <image class="pages_index__images-search" src="/images/icons/mirror.png"></image>
+<!-- bar start -->
+<!-- <view class="app__header-bar">首页</view>
+<view class="app__header-bar-bg"></view> -->
+<navBar 
+    title-text="首页" 
+    background="linear-gradient(to right, #6960ef, #597df4)"
+    color="#fff"
+    fontSize="14"/>
+<!-- bar start -->
+<view class="pages-index__search app__vertical-space app__horizontal-space">
+  <image mode="aspectFill" class="pages_index__images-search" src="/images/icons/mirror.png"></image>
   <input class="pages-index__input-search" type="text" placeholder="搜素商品名称或类型" placeholder-style="color:#b4b2b3;"></input>
 </view>
+<view class="app__vertical-space">
 <swiper autoplay previous-margin="30rpx" next-margin="30rpx" circular="true" current="{{swiperIndex}}" bindchange="onSwiperChange">
   <swiper-item wx:for="{{bannerList}}" wx:key="id">
     <view class="{{swiperIndex === index? 'pages-index__swiper-item--current':'pages-index__swiper-item'}}">
@@ -11,11 +20,66 @@
     </view>
   </swiper-item>
 </swiper>
-<view class="pages-index__sort">
+</view>
+<view class="pages-index__sort app__vertical-space app__horizontal-space">
   <view class="pages-index__sort-item" wx:for="{{sortList}}">
     <view class="pages-index__sort-item-image">
-      <image src="{{item.imgUrl}}"></image>
+      <image mode="aspectFill" src="{{item.imgUrl}}"></image>
     </view>
     <span class="pages-index__sort-item-span">{{item.describe}}</span>
+  </view>
+</view>
+<view class="pages-index__quick-buy app__horizontal-space app__vertical-space">
+  <view class="pages-index__quick-buy-title">速/购/通/道</view>
+  <view class="pages-index__quick-buy-img">
+    <view class="pages-index__quick-buy-img-person">
+     <image mode="aspectFill" src="/images/go-person.png"></image>
+    </view>
+    <image mode="aspectFill" src="/images/go-shop.png"></image>
+    <span class="pages-index__quick-buy-span">卡酷商城小程序上新了</span>
+    <view class="pages-index__quick-buy-go">
+      <image mode="aspectFill" src="/images/go.png"></image>
+    </view>
+  </view>
+</view>
+<view class="pages-index__hot app__horizontal-space app__vertical-space">
+  <view class="pages-index__hot-header">
+    <view class="pages-index__hot-tag">热门产品</view>
+    <span class="page-index__hot-more">MORE</span>
+  </view>
+  <view class="pages-index__hot-body">
+    <view class="pages-index__hot-body-item" wx:for="{{hotList}}" wx:key="{{item.id}}">
+      <view class="pages-index__hot-body-img">
+        <image mode="aspectFill" src="{{item.imgUrl}}"></image>
+      </view>
+      <span style="margin-top:10rpx;">{{item.title}}</span>
+      <view class="pages-index__hot-price">
+        <span>¥ {{item.price}}</span>
+        <view class="pages-index__hot-add-car">
+          <image mode="aspectFill" src="/images/icons/购物车.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="pages-index__major-product-title app__vertical-space">
+  <hr class="pages-index__major-product-title-line"></hr>
+  <view class="pages-index__rounded-rectangle"></view>
+  <view class="pages-index__rounded-rectangle2"></view>
+  <span class="pages-index__major-product-span">主打产品</span>
+  <view class="pages-index__rounded-rectangle3"></view>
+  <view class="pages-index__rounded-rectangle4"></view>
+  <hr class="pages-index__major-product-title-line2"></hr>
+</view>
+<view class="pages-index__major-product-body app__vertical-space app__horizontal-space">
+  <view class="pages-index__major-product-item" wx:for="{{majorList}}" wx:key="{{item.id}}">
+    <view class="pages-index__major-product-item-image">
+      <image mode="aspectFill" src="{{item.imgUrl}}"></image>
+    </view>
+    <span style="margin-left:20rpx;">{{item.title}}</span>
+    <view class="pages-index__major-product-price">
+      <span>¥ {{item.price}}</span>
+      <view></view>
+    </view>
   </view>
 </view>
