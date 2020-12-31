@@ -31,6 +31,7 @@
 </view>
 <view class="pages-index__quick-buy app__horizontal-space app__vertical-space">
   <view class="pages-index__quick-buy-title">速/购/通/道</view>
+  <!-- <view class="pages-index__quick-buy-title-bg"></view> -->
   <view class="pages-index__quick-buy-img">
     <view class="pages-index__quick-buy-img-person">
      <image mode="aspectFill" src="/images/go-person.png"></image>
@@ -52,7 +53,7 @@
       <view class="pages-index__hot-body-img">
         <image mode="aspectFill" src="{{item.imgUrl}}"></image>
       </view>
-      <span style="margin-top:10rpx;">{{item.title}}</span>
+      <span>{{item.title}}</span>
       <view class="pages-index__hot-price">
         <span>¥ {{item.price}}</span>
         <view class="pages-index__hot-add-car">

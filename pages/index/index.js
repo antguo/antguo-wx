@@ -21,9 +21,9 @@ Page({
     ],
     // 热门产品
     hotList: [
-      { id: 1, imgUrl: '/images/loading-img.png', title: '潮流碎花连衣裙', price: 89 },
-      { id: 2, imgUrl: '/images/loading-img.png', title: '男士休闲运动裤',price: 96 },
-      { id: 3, imgUrl: '/images/loading-img.png', title: '清凉一夏防晒衫',price: 45 }
+      { id: 1, imgUrl: '/images/hots/hots-1.png', title: '潮流碎花连衣裙', price: 89 },
+      { id: 2, imgUrl: '/images/hots/hots-1.png', title: '男士休闲运动裤',price: 96 },
+      { id: 3, imgUrl: '/images/hots/hots-2.png', title: '清凉一夏防晒衫',price: 45 }
     ],
     // 主打产品
     majorList: [
